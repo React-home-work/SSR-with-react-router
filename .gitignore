@@ -1,0 +1,11 @@
+.idea
+tmp
+node_modules
+bower_components
+web_modules
+npm-debug.log
+npm-debug.log.*
+yarn-error.log
+dist
+server.js
+public/
