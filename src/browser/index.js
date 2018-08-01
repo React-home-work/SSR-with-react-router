@@ -3,8 +3,11 @@
 import React from 'react'
 import { hydrate } from 'react-dom'
 import App from '../shared/App'
+import { fetchPopularRepos } from '../shared/api';
 
-hydrate(
-  <App data="Success" />,
-  document.getElementById('app')
-);
+fetchPopularRepos().then((data) => {
+  hydrate(
+    <App data={data} />,
+    document.getElementById('app')
+  );
+});
